@@ -1,0 +1,21 @@
+<view class="page-box" catchtap="switchBoard" data-keyboardShow="false">
+    <!-- 确定金额按钮 -->
+    <!-- <view class="pay-confirm">确定</view> -->
+    <!-- 输入金额部分 -->
+    <view class="pay-input" catchtap="switchBoard" data-keyboardShow="true">
+        <text wx:if="{{!recommendFlag && !isEmpty}}">¥</text>
+        <text>{{content}}</text>
+        <!-- <view class="{{isEmpty ? '' : 'dsn'}}">选择或输入金额数</view> -->
+    </view>
+    <view class="pay-tap {{isEmpty ? '' : 'dsn'}}">选择或输入金额数</view>
+    <view class="pay-balance">当前余额：¥{{balance}}</view>
+    <!-- 模拟键盘 -->
+    <view class="pay-keyboard {{keyboardShow ? '' : 'bottom-hidden'}}">
+        <view class="pay-complete-input" catchtap="switchBoard" data-keyboardShow="false">完成</view>
+        <view class="pay-key-container">
+            <block wx:for="{{keyboardVal}}" wx:key="{{item}}">
+                <view catchtap="inputMoney" data-money="{{item}}" class="pay-key-item {{index < 3 && 'pay-text'}} {{index == 0 && 'border0'}} {{(index) % 3 !== 0 && 'border-l1'}}">{{item}}</view>
+            </block>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,124 @@
+page {
+    background: #fff;
+    height: 100%;
+}
+
+.page-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.pay-confirm {
+    position: absolute;
+    height: 100rpx;
+    line-height: 100rpx;
+    color: #20c471;
+    text-align: right;
+    width: 90%;
+    margin-top: 20rpx;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pay-input {
+    position: absolute;
+    width: 90%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 8rpx;
+    margin-top: 140rpx; 
+    left: 50%;
+    top: 160rpx;
+    transform: translate(-50%);
+}
+
+.pay-keyboard {
+    width: 100%;
+    position: absolute;
+    height: 520rpx;
+    background: #fff;
+    bottom: 0;
+    transition: bottom .5s;
+}
+
+.pay-complete-input {
+    /* position: absolute; */
+    margin: 0 auto;
+    width: 90%;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: right;
+    color: #20c471;
+}
+
+.pay-key-item {
+    width: 248rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    float: left;
+    text-align: center;
+    border-top: 1px solid rgb(175, 175, 175);
+    font-size:50rpx;
+    /* border-bottom: 1px solid rgb(175, 175, 175); */
+}
+
+.pay-key-container {
+    position: absolute;
+    width: 100%;
+    /* margin: 0 auto; */
+    left: 50%;
+    /* top: 20rpx; */
+    transform: translate(-50%);
+    border-bottom: 1px solid rgb(175, 175, 175);
+    bottom: 0;
+}
+
+.border0 {
+    border-bottom: 0;
+}
+
+.border-l1 {
+    border-left: 2rpx solid rgb(175, 175, 175);
+}
+
+.bottom-hidden {
+    bottom: -520rpx;
+}
+
+.pay-text {
+    font-size: 40rpx;
+    color: #20c471;
+    /* color: rgb(175, 175, 175); */
+}
+
+.pay-balance {
+    position: absolute;
+    width: 100%;    
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+    top: 440rpx;
+}
+
+.pay-tap {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 200rpx;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    top:336rpx;
+    color: rgb(175, 175, 175);
+    z-index: -1;
+}
+
+.dsn {
+    display: none;
+}
