@@ -22,4 +22,4 @@
 
 下面是效果gif：
 
-<image src="./keyboard.gif"></image>
+<image style="width: 338px;height: 731px" src="./keyboard.gif"></image>
